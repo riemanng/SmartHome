@@ -1,17 +1,12 @@
-//
-//  RoomView.swift
-//  SmartHome
-//
-//  Created by Константин Доронин on 26.05.2021.
-//
-
 import SwiftUI
 
 struct RoomView: View {
     @EnvironmentObject var applianceVM: ApplianceViewModel
     
-    var filteredByRoom: [Appliances] {
-        applianceVM.list.filter { $0.room == RoomCategory.room.rawValue}
+    var roomCategory: RoomCategory.RawValue
+    
+    private var filteredByRoom: [Appliances] {
+        applianceVM.list.filter { $0.room == roomCategory }
     }
     
     var body: some View {
@@ -39,9 +34,13 @@ struct RoomView: View {
                             .frame(height: 25)
                     }
                 }
+                .onLongPressGesture {
+                    patchAppliance(device)
+                }
             }
             .ignoresSafeArea()
             .navigationBarTitle("Room devices")
         }
+        .animation(.default)
     }
 }

@@ -1,10 +1,3 @@
-//
-//  RoomsView.swift
-//  SmartHome
-//
-//  Created by Константин Доронин on 11.05.2021.
-//
-
 import SwiftUI
 
 enum Rooms {
@@ -27,16 +20,16 @@ struct RoomsView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    NavigationLink(destination: RoomView()) {
+                    NavigationLink(destination: RoomView(roomCategory: RoomCategory.room.rawValue)) {
                         RoomUnit(imageName: "bedroom", unitName: "Rooms")
                     }
-                    NavigationLink(destination: KitchenView(roomCategory: RoomCategory.kitchen.rawValue)) {
+                    NavigationLink(destination: RoomView(roomCategory: RoomCategory.livingRoom.rawValue)) {
                         RoomUnit(imageName: "living_room", unitName: "Living room")
                     }
-                    NavigationLink(destination: LivingRoomView()) {
+                    NavigationLink(destination: RoomView(roomCategory: RoomCategory.kitchen.rawValue)) {
                         RoomUnit(imageName: "kitchen", unitName: "Kitchen")
                     }
-                    NavigationLink(destination: OtherRoomView()) {
+                    NavigationLink(destination: RoomView(roomCategory: RoomCategory.other.rawValue)) {
                         RoomUnit(imageName: "door", unitName: "Other")
                     }
                 }

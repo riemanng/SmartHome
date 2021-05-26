@@ -13,13 +13,6 @@ enum API {
     }
 }
 
-struct UserID {
-    static let shared = UserID()
-    private(set) var id = String(UserDefaults.standard.integer(forKey: "user_id"))
-    
-    private init() {}
-}
-
 func postAppliance(_ name: String, _ isActive: Bool = false, _ room: String) {
     let id = String(UserDefaults.standard.integer(forKey: "user_id"))
     guard let url = URL(string: API.server + API.Routes.users + id + API.Routes.appliances) else { return }

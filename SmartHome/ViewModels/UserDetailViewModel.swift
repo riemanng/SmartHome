@@ -1,13 +1,7 @@
-//
-//  UserDetailViewModel.swift
-//  SmartHome
-//
-//  Created by Константин Доронин on 22.05.2021.
-//
-
 import Foundation
 import Combine
 
+//TODO: - Implement this later
 final class UserDetailViewModel: ObservableObject {
     
 }

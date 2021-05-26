@@ -1,10 +1,3 @@
-//
-//  DescriptionView.swift
-//  SmartHome
-//
-//  Created by Константин Доронин on 23.05.2021.
-//
-
 import SwiftUI
 
 struct DescriptionView: View {

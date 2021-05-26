@@ -1,18 +1,4 @@
-//
-//  CreateApplianceView.swift
-//  SmartHome
-//
-//  Created by Константин Доронин on 23.05.2021.
-//
-
 import SwiftUI
-
-enum RoomCategory: String, CaseIterable {
-    case room = "Room"
-    case kitchen = "Kitchen"
-    case livingRoom = "Living Room"
-    case other = "Other"
-}
 
 enum DeviceName: String, CaseIterable {
     case ugabugaV1 = "UGABUGA M1"

@@ -1,9 +1,6 @@
 import SwiftUI
 
 struct RegisterButton: View {
-        
-//    var action: () -> Void
-    
     var body: some View {
         Text("Register")
             .font(.headline)
@@ -13,8 +10,4 @@ struct RegisterButton: View {
             .background(Color.red.opacity(0.7))
             .cornerRadius(20)
     }
-    
-//    init (action: @escaping () -> Void) {
-//        self.action = action
-//    }
 }

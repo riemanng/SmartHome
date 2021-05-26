@@ -5,12 +5,15 @@ final class ApplianceViewModel: ObservableObject {
     
     private var task = Set<AnyCancellable>()
     private var timer: Timer?
+    
     @Published var list: [Appliances] = []
-    
-    
     
     init() {
         fetchWithTimer()
+    }
+    
+    deinit {
+        task.removeAll()
     }
     
     func fetchAppliance() {
@@ -28,28 +31,6 @@ final class ApplianceViewModel: ObservableObject {
     func fetchWithTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { _ in
             self.fetchAppliance()
-        }
-    }
-}
-
-
-
-
-final class DeviceViewModel: ObservableObject {
-    
-    private var task = Set<AnyCancellable>()
-    private var timer: Timer?
-    
-//    private lazy var applianceList: [Appliances] = []
-//    private lazy var safetyList: [Safety] = []
-//    private lazy var sensorsList: [Sensors] = []
-//    private lazy var voiceList: [VoiceAssistant] = []
-    
-    @Published var list: [Device] = []
-    
-    func fetchDevices() {
-        timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true) { _ in
-            
         }
     }
 }

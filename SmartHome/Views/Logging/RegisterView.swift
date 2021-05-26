@@ -1,10 +1,3 @@
-//
-//  RegisterView.swift
-//  SmartHome
-//
-//  Created by Константин Доронин on 11.05.2021.
-//
-
 import SwiftUI
 
 struct RegisterView: View {
@@ -59,15 +52,6 @@ struct RegisterView: View {
                             RegisterButton()
                         }
                         .disabled(!viewModel.isValid)
-                        
-                        
-//                        Button(action: {}) {
-//                            Text("Already registred? Log in!")
-//                                .font(.subheadline)
-//                                .foregroundColor(.secondary)
-//                                .padding()
-//
-//                        }
                         
                     }
                     .offset(y: 20)

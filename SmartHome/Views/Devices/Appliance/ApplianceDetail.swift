@@ -11,10 +11,6 @@ struct ApplianceDetail: View {
     @EnvironmentObject var viewModel: ApplianceViewModel
     
     var appliance: Appliances
-    
-    var applianceIndex: Int {
-        viewModel.list.firstIndex(where: { $0.id == appliance.id })!
-    }
 
     var body: some View {
         ZStack {
