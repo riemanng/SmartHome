@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B13D24E265E8D6600555E24 /* RoomUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13D24D265E8D6600555E24 /* RoomUnit.swift */; };
+		8B13D256265EB20300555E24 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13D255265EB20300555E24 /* Device.swift */; };
+		8B13D25C265EB6A600555E24 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13D25B265EB6A600555E24 /* RoomView.swift */; };
+		8B13D268265EC07700555E24 /* KitchenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13D267265EC07700555E24 /* KitchenView.swift */; };
+		8B13D26D265EC0A700555E24 /* LivingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13D26C265EC0A700555E24 /* LivingRoomView.swift */; };
+		8B13D272265EC0DC00555E24 /* OtherRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B13D271265EC0DC00555E24 /* OtherRoomView.swift */; };
+		8B27A456265528CD00864896 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A455265528CC00864896 /* UserViewModel.swift */; };
+		8B27A45B26557D9F00864896 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A45A26557D9F00864896 /* Colors.swift */; };
+		8B27A4642655830300864896 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A4632655830300864896 /* API.swift */; };
+		8B27A46C265584F600864896 /* ApplianceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A46B265584F600864896 /* ApplianceViewModel.swift */; };
+		8B27A4712655852E00864896 /* SensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A4702655852E00864896 /* SensorViewModel.swift */; };
+		8B27A4762655855A00864896 /* SafetyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A4752655855A00864896 /* SafetyViewModel.swift */; };
+		8B27A47B265585BA00864896 /* VoiceAssistantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A47A265585BA00864896 /* VoiceAssistantViewModel.swift */; };
+		8B3FD8402656626D001FB92A /* ApplianceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FD83F2656626C001FB92A /* ApplianceDetail.swift */; };
+		8B6F239326543787003AB440 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F239226543787003AB440 /* RegisterViewModel.swift */; };
+		8B6F239B26545E84003AB440 /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F239A26545E83003AB440 /* RegisterButton.swift */; };
+		8B71A1472652F17F00CE6831 /* ControlUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B71A1462652F17F00CE6831 /* ControlUnit.swift */; };
+		8B9B55132659509300EC6273 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B55122659509300EC6273 /* UserDetailViewModel.swift */; };
+		8B9B55182659906500EC6273 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B55172659906500EC6273 /* DescriptionView.swift */; };
+		8B9B551D2659986200EC6273 /* CreateApplianceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B551C2659986200EC6273 /* CreateApplianceView.swift */; };
+		8BD6DB9A265C2CEC0085F5C9 /* HTTPMethodTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DB99265C2CEC0085F5C9 /* HTTPMethodTypes.swift */; };
+		8BD6DB9F265C2E230085F5C9 /* WorkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DB9E265C2E230085F5C9 /* WorkType.swift */; };
+		8BD6DBA4265C2EDE0085F5C9 /* ConentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DBA3265C2EDE0085F5C9 /* ConentType.swift */; };
+		8BE5819B264AB6D900D541C3 /* SmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5819A264AB6D900D541C3 /* SmartHomeApp.swift */; };
+		8BE5819D264AB6D900D541C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5819C264AB6D900D541C3 /* ContentView.swift */; };
+		8BE5819F264AB6DF00D541C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5819E264AB6DF00D541C3 /* Assets.xcassets */; };
+		8BE581A2264AB6DF00D541C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE581A1264AB6DF00D541C3 /* Preview Assets.xcassets */; };
+		8BE581AD264AB6DF00D541C3 /* SmartHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581AC264AB6DF00D541C3 /* SmartHomeTests.swift */; };
+		8BE581B8264AB6E000D541C3 /* SmartHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581B7264AB6E000D541C3 /* SmartHomeUITests.swift */; };
+		8BE581C9264ABB6800D541C3 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581C8264ABB6800D541C3 /* UserView.swift */; };
+		8BE581D2264ABEE800D541C3 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581D1264ABEE800D541C3 /* ControlView.swift */; };
+		8BE581EC264AC51900D541C3 /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581EB264AC51900D541C3 /* RoomsView.swift */; };
+		8BE581F1264AD7DD00D541C3 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581F0264AD7DD00D541C3 /* HistoryView.swift */; };
+		8BE581F6264AEC7900D541C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581F5264AEC7900D541C3 /* HomeView.swift */; };
+		8BE58200264AEE2300D541C3 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581FF264AEE2300D541C3 /* RegisterView.swift */; };
+		8BE58205264AF11F00D541C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE58204264AF11F00D541C3 /* LoginView.swift */; };
+		8BE5820B264AFFB400D541C3 /* HomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5820A264AFFB300D541C3 /* HomeBackground.swift */; };
+		8BE5821C264B06D700D541C3 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5821B264B06D700D541C3 /* UserDetailView.swift */; };
+		8BE58225264B18D000D541C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE58224264B18D000D541C3 /* User.swift */; };
+		8BE58230264B1AA200D541C3 /* Appliances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5822F264B1AA200D541C3 /* Appliances.swift */; };
+		8BE58235264B1AAD00D541C3 /* Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE58234264B1AAD00D541C3 /* Sensors.swift */; };
+		8BE5823A264B1ADA00D541C3 /* Safety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE58239264B1ADA00D541C3 /* Safety.swift */; };
+		8BE5823F264B1AF800D541C3 /* VoiceAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5823E264B1AF800D541C3 /* VoiceAssistant.swift */; };
+		8BF828D4264E8CB200739AFF /* AppliancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF828D3264E8CB200739AFF /* AppliancesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BE581A9264AB6DF00D541C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE5818F264AB6D800D541C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE58196264AB6D900D541C3;
+			remoteInfo = SmartHome;
+		};
+		8BE581B4264AB6DF00D541C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE5818F264AB6D800D541C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE58196264AB6D900D541C3;
+			remoteInfo = SmartHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B13D24D265E8D6600555E24 /* RoomUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomUnit.swift; sourceTree = "<group>"; };
+		8B13D255265EB20300555E24 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		8B13D25B265EB6A600555E24 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		8B13D267265EC07700555E24 /* KitchenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenView.swift; sourceTree = "<group>"; };
+		8B13D26C265EC0A700555E24 /* LivingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoomView.swift; sourceTree = "<group>"; };
+		8B13D271265EC0DC00555E24 /* OtherRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherRoomView.swift; sourceTree = "<group>"; };
+		8B27A455265528CC00864896 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8B27A45A26557D9F00864896 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8B27A4632655830300864896 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		8B27A46B265584F600864896 /* ApplianceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplianceViewModel.swift; sourceTree = "<group>"; };
+		8B27A4702655852E00864896 /* SensorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorViewModel.swift; sourceTree = "<group>"; };
+		8B27A4752655855A00864896 /* SafetyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyViewModel.swift; sourceTree = "<group>"; };
+		8B27A47A265585BA00864896 /* VoiceAssistantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantViewModel.swift; sourceTree = "<group>"; };
+		8B3FD83F2656626C001FB92A /* ApplianceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplianceDetail.swift; sourceTree = "<group>"; };
+		8B6F239226543787003AB440 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		8B6F239A26545E83003AB440 /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
+		8B71A1462652F17F00CE6831 /* ControlUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnit.swift; sourceTree = "<group>"; };
+		8B9B55122659509300EC6273 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		8B9B55172659906500EC6273 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		8B9B551C2659986200EC6273 /* CreateApplianceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateApplianceView.swift; sourceTree = "<group>"; };
+		8BD6DB99265C2CEC0085F5C9 /* HTTPMethodTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodTypes.swift; sourceTree = "<group>"; };
+		8BD6DB9E265C2E230085F5C9 /* WorkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkType.swift; sourceTree = "<group>"; };
+		8BD6DBA3265C2EDE0085F5C9 /* ConentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConentType.swift; sourceTree = "<group>"; };
+		8BE58197264AB6D900D541C3 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE5819A264AB6D900D541C3 /* SmartHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeApp.swift; sourceTree = "<group>"; };
+		8BE5819C264AB6D900D541C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8BE5819E264AB6DF00D541C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BE581A1264AB6DF00D541C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BE581A3264AB6DF00D541C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE581A8264AB6DF00D541C3 /* SmartHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE581AC264AB6DF00D541C3 /* SmartHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeTests.swift; sourceTree = "<group>"; };
+		8BE581AE264AB6DF00D541C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE581B3264AB6DF00D541C3 /* SmartHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE581B7264AB6E000D541C3 /* SmartHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeUITests.swift; sourceTree = "<group>"; };
+		8BE581B9264AB6E000D541C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE581C8264ABB6800D541C3 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		8BE581D1264ABEE800D541C3 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		8BE581EB264AC51900D541C3 /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
+		8BE581F0264AD7DD00D541C3 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8BE581F5264AEC7900D541C3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8BE581FF264AEE2300D541C3 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		8BE58204264AF11F00D541C3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8BE5820A264AFFB300D541C3 /* HomeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBackground.swift; sourceTree = "<group>"; };
+		8BE5821B264B06D700D541C3 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		8BE58224264B18D000D541C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BE5822F264B1AA200D541C3 /* Appliances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appliances.swift; sourceTree = "<group>"; };
+		8BE58234264B1AAD00D541C3 /* Sensors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensors.swift; sourceTree = "<group>"; };
+		8BE58239264B1ADA00D541C3 /* Safety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Safety.swift; sourceTree = "<group>"; };
+		8BE5823E264B1AF800D541C3 /* VoiceAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistant.swift; sourceTree = "<group>"; };
+		8BF828D3264E8CB200739AFF /* AppliancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppliancesView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BE58194264AB6D900D541C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE581A5264AB6DF00D541C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE581B0264AB6DF00D541C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B13D25A265EB68E00555E24 /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				8B13D25B265EB6A600555E24 /* RoomView.swift */,
+				8B13D267265EC07700555E24 /* KitchenView.swift */,
+				8B13D26C265EC0A700555E24 /* LivingRoomView.swift */,
+				8B13D271265EC0DC00555E24 /* OtherRoomView.swift */,
+			);
+			path = Rooms;
+			sourceTree = "<group>";
+		};
+		8B13D263265EBD2A00555E24 /* Appliance */ = {
+			isa = PBXGroup;
+			children = (
+				8BF828D3264E8CB200739AFF /* AppliancesView.swift */,
+				8B9B551C2659986200EC6273 /* CreateApplianceView.swift */,
+				8B3FD83F2656626C001FB92A /* ApplianceDetail.swift */,
+			);
+			path = Appliance;
+			sourceTree = "<group>";
+		};
+		8B27A462265582F500864896 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8B27A4632655830300864896 /* API.swift */,
+				8BD6DB99265C2CEC0085F5C9 /* HTTPMethodTypes.swift */,
+				8BD6DB9E265C2E230085F5C9 /* WorkType.swift */,
+				8BD6DBA3265C2EDE0085F5C9 /* ConentType.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8BE5818E264AB6D800D541C3 = {
+			isa = PBXGroup;
+			children = (
+				8BE58199264AB6D900D541C3 /* SmartHome */,
+				8BE581AB264AB6DF00D541C3 /* SmartHomeTests */,
+				8BE581B6264AB6DF00D541C3 /* SmartHomeUITests */,
+				8BE58198264AB6D900D541C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BE58198264AB6D900D541C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE58197264AB6D900D541C3 /* SmartHome.app */,
+				8BE581A8264AB6DF00D541C3 /* SmartHomeTests.xctest */,
+				8BE581B3264AB6DF00D541C3 /* SmartHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BE58199264AB6D900D541C3 /* SmartHome */ = {
+			isa = PBXGroup;
+			children = (
+				8BE5819A264AB6D900D541C3 /* SmartHomeApp.swift */,
+				8B27A462265582F500864896 /* Networking */,
+				8BE58223264B18BB00D541C3 /* Models */,
+				8BE581CD264ABEDB00D541C3 /* Views */,
+				8BE58229264B1A3E00D541C3 /* ViewModels */,
+				8BE5819E264AB6DF00D541C3 /* Assets.xcassets */,
+				8BE581A3264AB6DF00D541C3 /* Info.plist */,
+				8BE581A0264AB6DF00D541C3 /* Preview Content */,
+			);
+			path = SmartHome;
+			sourceTree = "<group>";
+		};
+		8BE581A0264AB6DF00D541C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8BE581A1264AB6DF00D541C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BE581AB264AB6DF00D541C3 /* SmartHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE581AC264AB6DF00D541C3 /* SmartHomeTests.swift */,
+				8BE581AE264AB6DF00D541C3 /* Info.plist */,
+			);
+			path = SmartHomeTests;
+			sourceTree = "<group>";
+		};
+		8BE581B6264AB6DF00D541C3 /* SmartHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE581B7264AB6E000D541C3 /* SmartHomeUITests.swift */,
+				8BE581B9264AB6E000D541C3 /* Info.plist */,
+			);
+			path = SmartHomeUITests;
+			sourceTree = "<group>";
+		};
+		8BE581CD264ABEDB00D541C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B13D25A265EB68E00555E24 /* Rooms */,
+				8BF828D2264E8C9500739AFF /* Devices */,
+				8BE5819C264AB6D900D541C3 /* ContentView.swift */,
+				8BE5821A264B06B700D541C3 /* User */,
+				8BE58209264AFF9A00D541C3 /* Helpers */,
+				8BE581FE264AEDF800D541C3 /* Logging */,
+				8BE581FA264AED3800D541C3 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BE581FA264AED3800D541C3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8BE581F5264AEC7900D541C3 /* HomeView.swift */,
+				8BE581F0264AD7DD00D541C3 /* HistoryView.swift */,
+				8BE581EB264AC51900D541C3 /* RoomsView.swift */,
+				8BE581C8264ABB6800D541C3 /* UserView.swift */,
+				8BE581D1264ABEE800D541C3 /* ControlView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8BE581FE264AEDF800D541C3 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				8BE581FF264AEE2300D541C3 /* RegisterView.swift */,
+				8B9B55172659906500EC6273 /* DescriptionView.swift */,
+				8BE58204264AF11F00D541C3 /* LoginView.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		8BE58209264AFF9A00D541C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8BE5820A264AFFB300D541C3 /* HomeBackground.swift */,
+				8B71A1462652F17F00CE6831 /* ControlUnit.swift */,
+				8B13D24D265E8D6600555E24 /* RoomUnit.swift */,
+				8B6F239A26545E83003AB440 /* RegisterButton.swift */,
+				8B27A45A26557D9F00864896 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8BE5821A264B06B700D541C3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				8BE5821B264B06D700D541C3 /* UserDetailView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		8BE58223264B18BB00D541C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BE58224264B18D000D541C3 /* User.swift */,
+				8BE5822F264B1AA200D541C3 /* Appliances.swift */,
+				8B13D255265EB20300555E24 /* Device.swift */,
+				8BE58234264B1AAD00D541C3 /* Sensors.swift */,
+				8BE58239264B1ADA00D541C3 /* Safety.swift */,
+				8BE5823E264B1AF800D541C3 /* VoiceAssistant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BE58229264B1A3E00D541C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B6F239226543787003AB440 /* RegisterViewModel.swift */,
+				8B27A455265528CC00864896 /* UserViewModel.swift */,
+				8B27A46B265584F600864896 /* ApplianceViewModel.swift */,
+				8B27A4702655852E00864896 /* SensorViewModel.swift */,
+				8B27A4752655855A00864896 /* SafetyViewModel.swift */,
+				8B27A47A265585BA00864896 /* VoiceAssistantViewModel.swift */,
+				8B9B55122659509300EC6273 /* UserDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BF828D2264E8C9500739AFF /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				8B13D263265EBD2A00555E24 /* Appliance */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BE58196264AB6D900D541C3 /* SmartHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE581BC264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHome" */;
+			buildPhases = (
+				8BE58193264AB6D900D541C3 /* Sources */,
+				8BE58194264AB6D900D541C3 /* Frameworks */,
+				8BE58195264AB6D900D541C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartHome;
+			packageProductDependencies = (
+			);
+			productName = SmartHome;
+			productReference = 8BE58197264AB6D900D541C3 /* SmartHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BE581A7264AB6DF00D541C3 /* SmartHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE581BF264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHomeTests" */;
+			buildPhases = (
+				8BE581A4264AB6DF00D541C3 /* Sources */,
+				8BE581A5264AB6DF00D541C3 /* Frameworks */,
+				8BE581A6264AB6DF00D541C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE581AA264AB6DF00D541C3 /* PBXTargetDependency */,
+			);
+			name = SmartHomeTests;
+			productName = SmartHomeTests;
+			productReference = 8BE581A8264AB6DF00D541C3 /* SmartHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BE581B2264AB6DF00D541C3 /* SmartHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE581C2264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHomeUITests" */;
+			buildPhases = (
+				8BE581AF264AB6DF00D541C3 /* Sources */,
+				8BE581B0264AB6DF00D541C3 /* Frameworks */,
+				8BE581B1264AB6DF00D541C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE581B5264AB6DF00D541C3 /* PBXTargetDependency */,
+			);
+			name = SmartHomeUITests;
+			productName = SmartHomeUITests;
+			productReference = 8BE581B3264AB6DF00D541C3 /* SmartHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BE5818F264AB6D800D541C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					8BE58196264AB6D900D541C3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					8BE581A7264AB6DF00D541C3 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 8BE58196264AB6D900D541C3;
+					};
+					8BE581B2264AB6DF00D541C3 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 8BE58196264AB6D900D541C3;
+					};
+				};
+			};
+			buildConfigurationList = 8BE58192264AB6D800D541C3 /* Build configuration list for PBXProject "SmartHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BE5818E264AB6D800D541C3;
+			packageReferences = (
+			);
+			productRefGroup = 8BE58198264AB6D900D541C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BE58196264AB6D900D541C3 /* SmartHome */,
+				8BE581A7264AB6DF00D541C3 /* SmartHomeTests */,
+				8BE581B2264AB6DF00D541C3 /* SmartHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BE58195264AB6D900D541C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE581A2264AB6DF00D541C3 /* Preview Assets.xcassets in Resources */,
+				8BE5819F264AB6DF00D541C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE581A6264AB6DF00D541C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE581B1264AB6DF00D541C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BE58193264AB6D900D541C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B13D272265EC0DC00555E24 /* OtherRoomView.swift in Sources */,
+				8BE581D2264ABEE800D541C3 /* ControlView.swift in Sources */,
+				8BD6DBA4265C2EDE0085F5C9 /* ConentType.swift in Sources */,
+				8B27A456265528CD00864896 /* UserViewModel.swift in Sources */,
+				8B13D256265EB20300555E24 /* Device.swift in Sources */,
+				8BE581F6264AEC7900D541C3 /* HomeView.swift in Sources */,
+				8BE5820B264AFFB400D541C3 /* HomeBackground.swift in Sources */,
+				8B6F239B26545E84003AB440 /* RegisterButton.swift in Sources */,
+				8BE5823F264B1AF800D541C3 /* VoiceAssistant.swift in Sources */,
+				8B71A1472652F17F00CE6831 /* ControlUnit.swift in Sources */,
+				8BE581F1264AD7DD00D541C3 /* HistoryView.swift in Sources */,
+				8BE58205264AF11F00D541C3 /* LoginView.swift in Sources */,
+				8B13D24E265E8D6600555E24 /* RoomUnit.swift in Sources */,
+				8B9B55182659906500EC6273 /* DescriptionView.swift in Sources */,
+				8BE5819D264AB6D900D541C3 /* ContentView.swift in Sources */,
+				8BE5823A264B1ADA00D541C3 /* Safety.swift in Sources */,
+				8BE58230264B1AA200D541C3 /* Appliances.swift in Sources */,
+				8B27A46C265584F600864896 /* ApplianceViewModel.swift in Sources */,
+				8B27A45B26557D9F00864896 /* Colors.swift in Sources */,
+				8BD6DB9A265C2CEC0085F5C9 /* HTTPMethodTypes.swift in Sources */,
+				8B27A47B265585BA00864896 /* VoiceAssistantViewModel.swift in Sources */,
+				8B6F239326543787003AB440 /* RegisterViewModel.swift in Sources */,
+				8B9B55132659509300EC6273 /* UserDetailViewModel.swift in Sources */,
+				8B13D26D265EC0A700555E24 /* LivingRoomView.swift in Sources */,
+				8B9B551D2659986200EC6273 /* CreateApplianceView.swift in Sources */,
+				8BE581C9264ABB6800D541C3 /* UserView.swift in Sources */,
+				8B27A4642655830300864896 /* API.swift in Sources */,
+				8B27A4712655852E00864896 /* SensorViewModel.swift in Sources */,
+				8BE58200264AEE2300D541C3 /* RegisterView.swift in Sources */,
+				8BD6DB9F265C2E230085F5C9 /* WorkType.swift in Sources */,
+				8BE58225264B18D000D541C3 /* User.swift in Sources */,
+				8B13D25C265EB6A600555E24 /* RoomView.swift in Sources */,
+				8B27A4762655855A00864896 /* SafetyViewModel.swift in Sources */,
+				8BE5819B264AB6D900D541C3 /* SmartHomeApp.swift in Sources */,
+				8BE581EC264AC51900D541C3 /* RoomsView.swift in Sources */,
+				8B3FD8402656626D001FB92A /* ApplianceDetail.swift in Sources */,
+				8BE5821C264B06D700D541C3 /* UserDetailView.swift in Sources */,
+				8B13D268265EC07700555E24 /* KitchenView.swift in Sources */,
+				8BF828D4264E8CB200739AFF /* AppliancesView.swift in Sources */,
+				8BE58235264B1AAD00D541C3 /* Sensors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE581A4264AB6DF00D541C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE581AD264AB6DF00D541C3 /* SmartHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE581AF264AB6DF00D541C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE581B8264AB6E000D541C3 /* SmartHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BE581AA264AB6DF00D541C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE58196264AB6D900D541C3 /* SmartHome */;
+			targetProxy = 8BE581A9264AB6DF00D541C3 /* PBXContainerItemProxy */;
+		};
+		8BE581B5264AB6DF00D541C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE58196264AB6D900D541C3 /* SmartHome */;
+			targetProxy = 8BE581B4264AB6DF00D541C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8BE581BA264AB6E000D541C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BE581BB264AB6E000D541C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BE581BD264AB6E000D541C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartHome/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BE581BE264AB6E000D541C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartHome/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BE581C0264AB6E000D541C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHome.app/SmartHome";
+			};
+			name = Debug;
+		};
+		8BE581C1264AB6E000D541C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHome.app/SmartHome";
+			};
+			name = Release;
+		};
+		8BE581C3264AB6E000D541C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartHome;
+			};
+			name = Debug;
+		};
+		8BE581C4264AB6E000D541C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmartHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BE58192264AB6D800D541C3 /* Build configuration list for PBXProject "SmartHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE581BA264AB6E000D541C3 /* Debug */,
+				8BE581BB264AB6E000D541C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE581BC264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE581BD264AB6E000D541C3 /* Debug */,
+				8BE581BE264AB6E000D541C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE581BF264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE581C0264AB6E000D541C3 /* Debug */,
+				8BE581C1264AB6E000D541C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE581C2264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE581C3264AB6E000D541C3 /* Debug */,
+				8BE581C4264AB6E000D541C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BE5818F264AB6D800D541C3 /* Project object */;
+}
