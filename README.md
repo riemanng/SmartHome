@@ -31,7 +31,7 @@ Back-End: Ubuntu 20.04 LTS
 
 ## Informational resources
 
-- [SwiftUI documentation] (https://developer.apple.com/documentation/SwiftUI)
-- [An introduction to Combine] (https://www.donnywals.com/an-introduction-to-combine/)
-- [Vapor documentation] (https://docs.vapor.codes/4.0/)
-- And ofcourse  [Google] (https://www.google.com) with [Stack Overflow] (https://stackoverflow.com)
+- [SwiftUI documentation](https://developer.apple.com/documentation/SwiftUI)
+- [An introduction to Combine](https://www.donnywals.com/an-introduction-to-combine/)
+- [Vapor documentation](https://docs.vapor.codes/4.0/)
+- And ofcourse  [Google](https://www.google.com) with [Stack Overflow](https://stackoverflow.com)
