@@ -6,28 +6,34 @@
 //
 
 import XCTest
+import Combine
 @testable import SmartHome
 
 class SmartHomeTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+   
+    func testBaseURL() {
+        XCTAssertEqual(API.server, "http://127.0.0.1:8080/")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testCanParseAppliance() throws {
+        let json = """
+            {
+                "id": 37,
+                "isActive": false,
+                "dateOfCheck": "2021-05-27T05:44:00Z",
+                "name": "UGABUGA Lamp X1",
+                "room": "Other",
+                "user": {
+                  "id": 2
+                }
+            }
+        """
+        
+        let jsonData = json.data(using: .utf8)!
+        let applianceData = try! JSONDecoder().decode(Appliances.self, from: jsonData)
+        
+        XCTAssertEqual("UGABUGA Lamp X1", applianceData.name)
+        XCTAssertNotEqual("", applianceData.room)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

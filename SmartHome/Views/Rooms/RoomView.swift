@@ -35,7 +35,7 @@ struct RoomView: View {
                     }
                 }
                 .onLongPressGesture {
-                    patchAppliance(device)
+                    APIResources().patchAppliance(device)
                 }
             }
             .ignoresSafeArea()

@@ -23,7 +23,7 @@ struct ApplianceDetail: View {
                         Text("id: \(appliance.id)")
                         Text("Device name: " + appliance.name)
                         Text("Placed in: " + appliance.room)
-                        Text("Last update:\n" + appliance.dateOfCheck)
+                        Text("Last update:\n" + Date(appliance.dateOfCheck).asShortDateString())
                         Text("State: " + (appliance.isActive ? "active now" : "turned off"))
                         
                     }
@@ -33,7 +33,7 @@ struct ApplianceDetail: View {
                     Spacer()
                     
                     Button(action: {
-                        patchAppliance(appliance)
+                        APIResources().patchAppliance(appliance)
                     }, label: {
                         Image(systemName: "circle.circle.fill")
                             .resizable()

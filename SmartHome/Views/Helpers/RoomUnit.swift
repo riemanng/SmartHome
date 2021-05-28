@@ -3,7 +3,6 @@ import SwiftUI
 struct RoomUnit: View {
     let imageName: String
     let unitName: String
-    
     var body: some View {
         VStack {
             Image(imageName)

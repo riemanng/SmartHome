@@ -17,11 +17,16 @@
 		8B27A4762655855A00864896 /* SafetyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A4752655855A00864896 /* SafetyViewModel.swift */; };
 		8B27A47B265585BA00864896 /* VoiceAssistantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B27A47A265585BA00864896 /* VoiceAssistantViewModel.swift */; };
 		8B3FD8402656626D001FB92A /* ApplianceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3FD83F2656626C001FB92A /* ApplianceDetail.swift */; };
+		8B503ED8265F68F200111599 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503ED7265F68F200111599 /* Date+Extension.swift */; };
+		8B503EEC2660A78B00111599 /* ApplianceFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503EEB2660A78B00111599 /* ApplianceFetchTests.swift */; };
+		8B503EF02660AB8100111599 /* SensorsFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503EEF2660AB8100111599 /* SensorsFetchTests.swift */; };
+		8B503EF62660AEB300111599 /* SafetiesFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503EF52660AEB300111599 /* SafetiesFetchTests.swift */; };
+		8B503EFA2660B1CD00111599 /* VoiceAssistantFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B503EF92660B1CD00111599 /* VoiceAssistantFetchTests.swift */; };
 		8B6F239326543787003AB440 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F239226543787003AB440 /* RegisterViewModel.swift */; };
 		8B6F239B26545E84003AB440 /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F239A26545E83003AB440 /* RegisterButton.swift */; };
 		8B71A1472652F17F00CE6831 /* ControlUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B71A1462652F17F00CE6831 /* ControlUnit.swift */; };
 		8B7E7223265EC4B400BA663B /* RoomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7E7222265EC4B400BA663B /* RoomCategory.swift */; };
-		8B9B55132659509300EC6273 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B55122659509300EC6273 /* UserDetailViewModel.swift */; };
+		8B7E722E265ED43500BA663B /* RegisterViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7E722D265ED43500BA663B /* RegisterViewModelSpec.swift */; };
 		8B9B55182659906500EC6273 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B55172659906500EC6273 /* DescriptionView.swift */; };
 		8B9B551D2659986200EC6273 /* CreateApplianceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B551C2659986200EC6273 /* CreateApplianceView.swift */; };
 		8BE5819B264AB6D900D541C3 /* SmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5819A264AB6D900D541C3 /* SmartHomeApp.swift */; };
@@ -29,7 +34,6 @@
 		8BE5819F264AB6DF00D541C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5819E264AB6DF00D541C3 /* Assets.xcassets */; };
 		8BE581A2264AB6DF00D541C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE581A1264AB6DF00D541C3 /* Preview Assets.xcassets */; };
 		8BE581AD264AB6DF00D541C3 /* SmartHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581AC264AB6DF00D541C3 /* SmartHomeTests.swift */; };
-		8BE581B8264AB6E000D541C3 /* SmartHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581B7264AB6E000D541C3 /* SmartHomeUITests.swift */; };
 		8BE581C9264ABB6800D541C3 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581C8264ABB6800D541C3 /* UserView.swift */; };
 		8BE581D2264ABEE800D541C3 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581D1264ABEE800D541C3 /* ControlView.swift */; };
 		8BE581EC264AC51900D541C3 /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE581EB264AC51900D541C3 /* RoomsView.swift */; };
@@ -55,13 +59,6 @@
 			remoteGlobalIDString = 8BE58196264AB6D900D541C3;
 			remoteInfo = SmartHome;
 		};
-		8BE581B4264AB6DF00D541C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8BE5818F264AB6D800D541C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BE58196264AB6D900D541C3;
-			remoteInfo = SmartHome;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -75,11 +72,16 @@
 		8B27A4752655855A00864896 /* SafetyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyViewModel.swift; sourceTree = "<group>"; };
 		8B27A47A265585BA00864896 /* VoiceAssistantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantViewModel.swift; sourceTree = "<group>"; };
 		8B3FD83F2656626C001FB92A /* ApplianceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplianceDetail.swift; sourceTree = "<group>"; };
+		8B503ED7265F68F200111599 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		8B503EEB2660A78B00111599 /* ApplianceFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplianceFetchTests.swift; sourceTree = "<group>"; };
+		8B503EEF2660AB8100111599 /* SensorsFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorsFetchTests.swift; sourceTree = "<group>"; };
+		8B503EF52660AEB300111599 /* SafetiesFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetiesFetchTests.swift; sourceTree = "<group>"; };
+		8B503EF92660B1CD00111599 /* VoiceAssistantFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceAssistantFetchTests.swift; sourceTree = "<group>"; };
 		8B6F239226543787003AB440 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		8B6F239A26545E83003AB440 /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		8B71A1462652F17F00CE6831 /* ControlUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnit.swift; sourceTree = "<group>"; };
 		8B7E7222265EC4B400BA663B /* RoomCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCategory.swift; sourceTree = "<group>"; };
-		8B9B55122659509300EC6273 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		8B7E722D265ED43500BA663B /* RegisterViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModelSpec.swift; sourceTree = "<group>"; };
 		8B9B55172659906500EC6273 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		8B9B551C2659986200EC6273 /* CreateApplianceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateApplianceView.swift; sourceTree = "<group>"; };
 		8BE58197264AB6D900D541C3 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,9 +93,6 @@
 		8BE581A8264AB6DF00D541C3 /* SmartHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE581AC264AB6DF00D541C3 /* SmartHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeTests.swift; sourceTree = "<group>"; };
 		8BE581AE264AB6DF00D541C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BE581B3264AB6DF00D541C3 /* SmartHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE581B7264AB6E000D541C3 /* SmartHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeUITests.swift; sourceTree = "<group>"; };
-		8BE581B9264AB6E000D541C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BE581C8264ABB6800D541C3 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		8BE581D1264ABEE800D541C3 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		8BE581EB264AC51900D541C3 /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
@@ -120,13 +119,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8BE581A5264AB6DF00D541C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BE581B0264AB6DF00D541C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,12 +155,19 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		8B503ED6265F68D400111599 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B503ED7265F68F200111599 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8BE5818E264AB6D800D541C3 = {
 			isa = PBXGroup;
 			children = (
 				8BE58199264AB6D900D541C3 /* SmartHome */,
 				8BE581AB264AB6DF00D541C3 /* SmartHomeTests */,
-				8BE581B6264AB6DF00D541C3 /* SmartHomeUITests */,
 				8BE58198264AB6D900D541C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -178,7 +177,6 @@
 			children = (
 				8BE58197264AB6D900D541C3 /* SmartHome.app */,
 				8BE581A8264AB6DF00D541C3 /* SmartHomeTests.xctest */,
-				8BE581B3264AB6DF00D541C3 /* SmartHomeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +184,7 @@
 		8BE58199264AB6D900D541C3 /* SmartHome */ = {
 			isa = PBXGroup;
 			children = (
+				8B503ED6265F68D400111599 /* Extensions */,
 				8BE5819A264AB6D900D541C3 /* SmartHomeApp.swift */,
 				8B27A462265582F500864896 /* Networking */,
 				8BE58223264B18BB00D541C3 /* Models */,
@@ -210,18 +209,14 @@
 			isa = PBXGroup;
 			children = (
 				8BE581AC264AB6DF00D541C3 /* SmartHomeTests.swift */,
+				8B503EEB2660A78B00111599 /* ApplianceFetchTests.swift */,
+				8B503EEF2660AB8100111599 /* SensorsFetchTests.swift */,
 				8BE581AE264AB6DF00D541C3 /* Info.plist */,
+				8B7E722D265ED43500BA663B /* RegisterViewModelSpec.swift */,
+				8B503EF52660AEB300111599 /* SafetiesFetchTests.swift */,
+				8B503EF92660B1CD00111599 /* VoiceAssistantFetchTests.swift */,
 			);
 			path = SmartHomeTests;
-			sourceTree = "<group>";
-		};
-		8BE581B6264AB6DF00D541C3 /* SmartHomeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8BE581B7264AB6E000D541C3 /* SmartHomeUITests.swift */,
-				8BE581B9264AB6E000D541C3 /* Info.plist */,
-			);
-			path = SmartHomeUITests;
 			sourceTree = "<group>";
 		};
 		8BE581CD264ABEDB00D541C3 /* Views */ = {
@@ -301,7 +296,6 @@
 				8B27A4702655852E00864896 /* SensorViewModel.swift */,
 				8B27A4752655855A00864896 /* SafetyViewModel.swift */,
 				8B27A47A265585BA00864896 /* VoiceAssistantViewModel.swift */,
-				8B9B55122659509300EC6273 /* UserDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -354,24 +348,6 @@
 			productReference = 8BE581A8264AB6DF00D541C3 /* SmartHomeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8BE581B2264AB6DF00D541C3 /* SmartHomeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE581C2264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHomeUITests" */;
-			buildPhases = (
-				8BE581AF264AB6DF00D541C3 /* Sources */,
-				8BE581B0264AB6DF00D541C3 /* Frameworks */,
-				8BE581B1264AB6DF00D541C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8BE581B5264AB6DF00D541C3 /* PBXTargetDependency */,
-			);
-			name = SmartHomeUITests;
-			productName = SmartHomeUITests;
-			productReference = 8BE581B3264AB6DF00D541C3 /* SmartHomeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -385,10 +361,6 @@
 						CreatedOnToolsVersion = 12.2;
 					};
 					8BE581A7264AB6DF00D541C3 = {
-						CreatedOnToolsVersion = 12.2;
-						TestTargetID = 8BE58196264AB6D900D541C3;
-					};
-					8BE581B2264AB6DF00D541C3 = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = 8BE58196264AB6D900D541C3;
 					};
@@ -411,7 +383,6 @@
 			targets = (
 				8BE58196264AB6D900D541C3 /* SmartHome */,
 				8BE581A7264AB6DF00D541C3 /* SmartHomeTests */,
-				8BE581B2264AB6DF00D541C3 /* SmartHomeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -427,13 +398,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8BE581A6264AB6DF00D541C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BE581B1264AB6DF00D541C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -466,12 +430,12 @@
 				8B27A45B26557D9F00864896 /* Colors.swift in Sources */,
 				8B27A47B265585BA00864896 /* VoiceAssistantViewModel.swift in Sources */,
 				8B6F239326543787003AB440 /* RegisterViewModel.swift in Sources */,
-				8B9B55132659509300EC6273 /* UserDetailViewModel.swift in Sources */,
 				8B9B551D2659986200EC6273 /* CreateApplianceView.swift in Sources */,
 				8BE581C9264ABB6800D541C3 /* UserView.swift in Sources */,
 				8B27A4642655830300864896 /* API.swift in Sources */,
 				8B27A4712655852E00864896 /* SensorViewModel.swift in Sources */,
 				8BE58200264AEE2300D541C3 /* RegisterView.swift in Sources */,
+				8B503ED8265F68F200111599 /* Date+Extension.swift in Sources */,
 				8BE58225264B18D000D541C3 /* User.swift in Sources */,
 				8B27A4762655855A00864896 /* SafetyViewModel.swift in Sources */,
 				8BE5819B264AB6D900D541C3 /* SmartHomeApp.swift in Sources */,
@@ -488,15 +452,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B503EFA2660B1CD00111599 /* VoiceAssistantFetchTests.swift in Sources */,
+				8B503EF02660AB8100111599 /* SensorsFetchTests.swift in Sources */,
+				8B503EEC2660A78B00111599 /* ApplianceFetchTests.swift in Sources */,
+				8B7E722E265ED43500BA663B /* RegisterViewModelSpec.swift in Sources */,
 				8BE581AD264AB6DF00D541C3 /* SmartHomeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8BE581AF264AB6DF00D541C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BE581B8264AB6E000D541C3 /* SmartHomeUITests.swift in Sources */,
+				8B503EF62660AEB300111599 /* SafetiesFetchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,11 +468,6 @@
 			isa = PBXTargetDependency;
 			target = 8BE58196264AB6D900D541C3 /* SmartHome */;
 			targetProxy = 8BE581A9264AB6DF00D541C3 /* PBXContainerItemProxy */;
-		};
-		8BE581B5264AB6DF00D541C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8BE58196264AB6D900D541C3 /* SmartHome */;
-			targetProxy = 8BE581B4264AB6DF00D541C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -716,44 +672,6 @@
 			};
 			name = Release;
 		};
-		8BE581C3264AB6E000D541C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SmartHomeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHomeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartHome;
-			};
-			name = Debug;
-		};
-		8BE581C4264AB6E000D541C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SmartHomeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.SmartHomeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartHome;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -780,15 +698,6 @@
 			buildConfigurations = (
 				8BE581C0264AB6E000D541C3 /* Debug */,
 				8BE581C1264AB6E000D541C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8BE581C2264AB6E000D541C3 /* Build configuration list for PBXNativeTarget "SmartHomeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8BE581C3264AB6E000D541C3 /* Debug */,
-				8BE581C4264AB6E000D541C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

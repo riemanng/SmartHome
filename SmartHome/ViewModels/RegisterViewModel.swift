@@ -68,6 +68,8 @@ final class RegisterViewModel: ObservableObject {
         cancellableBag.removeAll()
     }
     
+    
+    
     func createUser(_ name: String, _ email: String) {
         guard let url = URL(string: API.server + API.Routes.users) else { return }
         
@@ -84,16 +86,16 @@ final class RegisterViewModel: ObservableObject {
         URLSession.shared.dataTask(with: request) { data, _, _ in
             guard let data = data else { return }
             
-            let finalData = try? JSONDecoder().decode(User.self, from: data)
+            let responseData = try? JSONDecoder().decode(User.self, from: data)
             
-            if finalData != nil {
+            if responseData != nil {
                 DispatchQueue.main.async {
                     self.authenticated = true
                     let def = UserDefaults.standard
-                    def.set(finalData?.id, forKey: "user_id")
+                    def.set(responseData?.id, forKey: "user_id")
                     def.set(true, forKey: "is_authenticated")
-                    def.set(finalData?.name, forKey: "user_name")
-                    def.set(finalData?.email, forKey: "user_email")
+                    def.set(responseData?.name, forKey: "user_name")
+                    def.set(responseData?.email, forKey: "user_email")
                 }
             } else {
                 DispatchQueue.main.async {
@@ -101,7 +103,7 @@ final class RegisterViewModel: ObservableObject {
                 }
             }
             
-            print(finalData ?? "User with this name already exists")
+            print(responseData ?? "User with this name already exists")
         }
         .resume()
     }
