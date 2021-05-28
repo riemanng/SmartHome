@@ -18,7 +18,7 @@ Smart Home is an app where the user can easily control thier IoT devices
 
 This app uses basic RESTful API (without authentication)
 
-[Back-End side](https://github.com/riemanng/fancy_vapor) uses the following technologies:
+[Back-End side](https://github.com/riemanng/FancyVapor) uses the following technologies:
 - Swift
 - Vapor
 - Fluent ORM
@@ -28,8 +28,8 @@ This app uses basic RESTful API (without authentication)
 
 
 ## Technical requirenments
-Client: iOS 14.2
-Back-End: Ubuntu 20.04 LTS
+- Client: iOS 14.2
+- Back-End: Ubuntu 20.04 LTS
 
 ## Informational resources
 
