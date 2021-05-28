@@ -1,5 +1,7 @@
 #  Smart Home
 
+<div style="width: 1000px; height 600px;"><img src="https://user-images.githubusercontent.com/37220963/120013286-ff8b1900-bff9-11eb-8976-825fb38ee2ca.png" width="30%" height="30%" align="right"></div>
+
 ## Overview
 
 Smart Home is an app where the user can easily control thier IoT devices
@@ -16,7 +18,7 @@ Smart Home is an app where the user can easily control thier IoT devices
 
 This app uses basic RESTful API (without authentication)
 
-Back-End side uses the following technologies:
+[Back-End side](https://github.com/riemanng/fancy_vapor) uses the following technologies:
 - Swift
 - Vapor
 - Fluent ORM
