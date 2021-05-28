@@ -58,7 +58,7 @@ struct CreateApplianceView: View {
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(10)
-                .onTapGesture { APIResources().postAppliance(deviceSelection.rawValue, isActive, roomSelection.rawValue) }
+                .onTapGesture { OutsideReq.Appliance().postAppliance(deviceSelection.rawValue, isActive, roomSelection.rawValue) }
         }
         .frame(maxWidth: UIScreen.main.bounds.width - 10)
         .padding(.bottom, (UIApplication.shared.windows.last?.safeAreaInsets.bottom)!)

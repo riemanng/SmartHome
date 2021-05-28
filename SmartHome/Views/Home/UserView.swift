@@ -7,7 +7,7 @@ struct UserView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: -15.0) {
-            Text("You 👩‍💻")
+            Text("You")
                 .font(.title3)
                 .fontWeight(.semibold)
                 .padding()
@@ -17,12 +17,13 @@ struct UserView: View {
             HStack(alignment: .center) {
                 
                 
-                Image("memoji_example")
+                Image("profile_placeholder")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 80)
                     .padding()
                     .foregroundColor(Color.blue.opacity(0.8))
+                    .offset(y: -10.0)
                 
                 
                 Spacer()
@@ -31,7 +32,7 @@ struct UserView: View {
                     Text("id: \(id)")
                 }
                 .font(.title2)
-                .offset(x: -140)
+                .offset(x: -100)
                 
                 
             }

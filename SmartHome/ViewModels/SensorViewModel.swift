@@ -8,7 +8,7 @@ protocol SensorProvidable: AnyObject {
 
 final class SensorProvider: SensorProvidable {
     func fetchSensors() -> AnyPublisher<[Sensors], Never> {
-        URLSession.shared.dataTaskPublisher(for: URL(string: API.server + API.Routes.users + "\(UserDefaults.standard.integer(forKey: "user_id"))" + API.Routes.sensors)!)
+        URLSession.shared.dataTaskPublisher(for: URL(string: Endpoint.server + Endpoint.Routes.users + "\(UserDefaults.standard.integer(forKey: "user_id"))" + Endpoint.Routes.sensors)!)
             .map { $0.data }
             .decode(type: [Sensors].self, decoder: JSONDecoder())
             .replaceError(with: [])

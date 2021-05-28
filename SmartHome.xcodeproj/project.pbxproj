@@ -27,6 +27,7 @@
 		8B71A1472652F17F00CE6831 /* ControlUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B71A1462652F17F00CE6831 /* ControlUnit.swift */; };
 		8B7E7223265EC4B400BA663B /* RoomCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7E7222265EC4B400BA663B /* RoomCategory.swift */; };
 		8B7E722E265ED43500BA663B /* RegisterViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7E722D265ED43500BA663B /* RegisterViewModelSpec.swift */; };
+		8B8615CA26613294007FC10D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B8615C926613294007FC10D /* README.md */; };
 		8B9B55182659906500EC6273 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B55172659906500EC6273 /* DescriptionView.swift */; };
 		8B9B551D2659986200EC6273 /* CreateApplianceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B551C2659986200EC6273 /* CreateApplianceView.swift */; };
 		8BE5819B264AB6D900D541C3 /* SmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5819A264AB6D900D541C3 /* SmartHomeApp.swift */; };
@@ -82,6 +83,7 @@
 		8B71A1462652F17F00CE6831 /* ControlUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlUnit.swift; sourceTree = "<group>"; };
 		8B7E7222265EC4B400BA663B /* RoomCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCategory.swift; sourceTree = "<group>"; };
 		8B7E722D265ED43500BA663B /* RegisterViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModelSpec.swift; sourceTree = "<group>"; };
+		8B8615C926613294007FC10D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8B9B55172659906500EC6273 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		8B9B551C2659986200EC6273 /* CreateApplianceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateApplianceView.swift; sourceTree = "<group>"; };
 		8BE58197264AB6D900D541C3 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 		8BE5818E264AB6D800D541C3 = {
 			isa = PBXGroup;
 			children = (
+				8B8615C926613294007FC10D /* README.md */,
 				8BE58199264AB6D900D541C3 /* SmartHome */,
 				8BE581AB264AB6DF00D541C3 /* SmartHomeTests */,
 				8BE58198264AB6D900D541C3 /* Products */,
@@ -392,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8615CA26613294007FC10D /* README.md in Resources */,
 				8BE581A2264AB6DF00D541C3 /* Preview Assets.xcassets in Resources */,
 				8BE5819F264AB6DF00D541C3 /* Assets.xcassets in Resources */,
 			);

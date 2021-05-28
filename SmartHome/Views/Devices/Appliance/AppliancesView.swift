@@ -56,6 +56,13 @@ struct AppliancesView: View {
                     .onTapGesture {
                         self.showModal.toggle()
                     }
+                    .rotationEffect(Angle(degrees: showModal ? 45 : 0))
+                    .onTapGesture {
+                        withAnimation(.spring(response: 1)){
+                            showModal.toggle()
+                        }
+                        
+                    }
             }
             
             VStack {

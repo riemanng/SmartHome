@@ -6,14 +6,13 @@
 //
 
 import XCTest
-import Combine
 @testable import SmartHome
 
 class SmartHomeTests: XCTestCase {
     
    
     func testBaseURL() {
-        XCTAssertEqual(API.server, "http://127.0.0.1:8080/")
+        XCTAssertEqual(Endpoint.server, "http://127.0.0.1:8080/")
     }
     
     func testCanParseAppliance() throws {

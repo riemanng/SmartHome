@@ -7,7 +7,7 @@ protocol VoiceAssistantProvidable: AnyObject {
 
 final class VoiceAssistantProvider: VoiceAssistantProvidable {
     func fetchAssistants() -> AnyPublisher<[VoiceAssistant], Never> {
-        URLSession.shared.dataTaskPublisher(for: URL(string: API.server + API.Routes.users + "\(UserDefaults.standard.integer(forKey: "user_id"))" + API.Routes.voice)!)
+        URLSession.shared.dataTaskPublisher(for: URL(string: Endpoint.server + Endpoint.Routes.users + "\(UserDefaults.standard.integer(forKey: "user_id"))" + Endpoint.Routes.voice)!)
             .map { $0.data }
             .decode(type: [VoiceAssistant].self, decoder: JSONDecoder())
             .replaceError(with: [])

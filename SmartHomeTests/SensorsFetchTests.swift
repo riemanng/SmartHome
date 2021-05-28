@@ -12,8 +12,8 @@ import Combine
 
 fileprivate final class MockSensorProvider: SensorProvidable {
     var mockList: [Sensors] = [
-        Sensors(id: 1, name: "name", isActive: false, dateOfCheck: Date(), room: "room"),
-        Sensors(id: 1, name: "name", isActive: false, dateOfCheck: Date(), room: "room"),
+        Sensors(id: 1, name: "name", isActive: false, dateOfCheck: "", room: "room"),
+        Sensors(id: 1, name: "name", isActive: false, dateOfCheck: "", room: "room"),
     ]
     
     func fetchSensors() -> AnyPublisher<[Sensors], Never> {

@@ -4,28 +4,30 @@ struct HomeView: View {
     @StateObject var applianceVM = ApplianceViewModel()
     
     var body: some View {
-            NavigationView {
-                ZStack {
-                    HomeBackground()
-                    ScrollView(showsIndicators: false) {
-                        VStack(spacing: 0) {
-                            NavigationLink(destination: UserDetailView()) {
-                                UserView()
-                                    .frame(width: UIScreen.main.bounds.width, height: 120)
-                            }
-                            ControlView()
-                            RoomsView()
-                            HistoryView()
+        NavigationView {
+            ZStack {
+                HomeBackground()
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 0) {
+                        NavigationLink(destination: UserDetailView()) {
+                            UserView()
+                                .frame(width: UIScreen.main.bounds.width, height: 120)
                         }
-                        .foregroundColor(.black)
+                        ControlView()
+                        RoomsView()
+                        HistoryView()
                     }
-                    .edgesIgnoringSafeArea([.bottom, .leading, .trailing])
+                    .foregroundColor(.black)
                 }
-                .navigationBarTitle("Home")
-                .navigationBarBackButtonHidden(true)
-                .navigationBarTitleDisplayMode(.inline)
+                .edgesIgnoringSafeArea([.bottom, .leading, .trailing])
             }
-            .environmentObject(applianceVM)
+            
+            .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
+            
+            
+        }
+        .environmentObject(applianceVM)
         
     }
 }

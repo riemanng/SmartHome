@@ -35,12 +35,13 @@ struct RoomView: View {
                     }
                 }
                 .onLongPressGesture {
-                    APIResources().patchAppliance(device)
+                    OutsideReq.Appliance().patchAppliance(device)
                 }
             }
-            .ignoresSafeArea()
-            .navigationBarTitle("Room devices")
         }
+        .ignoresSafeArea()
+//        .navigationBarHidden(false)
+        .navigationBarTitle("Room devices")
         .animation(.default)
     }
 }

@@ -7,7 +7,7 @@ protocol SafetyProvidable: AnyObject {
 
 final class SafetyProvider: SafetyProvidable {
     func fetchSafeties() -> AnyPublisher<[Safety], Never> {
-        URLSession.shared.dataTaskPublisher(for: URL(string: API.server + API.Routes.users + "\(UserDefaults.standard.integer(forKey: "user_id"))" + API.Routes.safety)!)
+        URLSession.shared.dataTaskPublisher(for: URL(string: Endpoint.server + Endpoint.Routes.users + "\(UserDefaults.standard.integer(forKey: "user_id"))" + Endpoint.Routes.safety)!)
             .map { $0.data }
             .decode(type: [Safety].self, decoder: JSONDecoder())
             .replaceError(with: [])

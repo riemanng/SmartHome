@@ -1,6 +1,10 @@
 import SwiftUI
 
+//TODO: - Implement this later
 struct HistoryView: View {
+    
+    let historyList = ["UGBUGA M1 state: off", "UGABUGA Socket state: on", "UGABUGA Teapot state: on"]
+    
     var body: some View {
         VStack(alignment: .leading, spacing: -20) {
             Text("History 🗄")
@@ -9,13 +13,13 @@ struct HistoryView: View {
                 .padding()
             
             ScrollView(showsIndicators: false) {
-                ForEach(1..<20) { action in
-                    Text("Command №\(action)")
+                ForEach(historyList, id: \.self) { action in
+                    Text("\(action)")
                         .frame(maxWidth: .infinity)
-                        .offset(x: -100)
                         .padding()
                         .background(Color.gray.opacity(0.2))
                         .cornerRadius(15)
+
                 }
                 .padding()
             }

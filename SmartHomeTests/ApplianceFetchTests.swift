@@ -52,7 +52,6 @@ class ApplianceFetchTests: XCTestCase {
             .store(in: &disposable)
         
         XCTAssertEqual(applianceViewModel.list.count, 3)
-        
     }
     
 }

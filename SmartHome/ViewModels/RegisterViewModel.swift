@@ -71,7 +71,7 @@ final class RegisterViewModel: ObservableObject {
     
     
     func createUser(_ name: String, _ email: String) {
-        guard let url = URL(string: API.server + API.Routes.users) else { return }
+        guard let url = URL(string: Endpoint.server + Endpoint.Routes.users) else { return }
         
         let body: [String: String] = ["name": name, "email": email]
         

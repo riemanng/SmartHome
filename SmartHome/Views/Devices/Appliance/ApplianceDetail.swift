@@ -31,16 +31,30 @@ struct ApplianceDetail: View {
                     .navigationBarBackButtonHidden(false)
                     
                     Spacer()
-                    
-                    Button(action: {
-                        APIResources().patchAppliance(appliance)
-                    }, label: {
-                        Image(systemName: "circle.circle.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(appliance.isActive ? .green : .red)
-                            .frame(height: 30)
-                    })
+                    VStack(spacing: 40) {
+                        Button(action: {
+                            OutsideReq.Appliance().patchAppliance(appliance)
+                        }, label: {
+                            Image(systemName: "circle.circle.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(appliance.isActive ? .green : .red)
+                                .frame(height: 30)
+                        })
+                        
+                        
+                        
+                        Button(action: {
+                            OutsideReq.Appliance().deleteAppliance(appliance.id)
+                        }, label: {
+                            Image(systemName: "xmark.bin.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.red)
+                                .frame(height: 25)
+                        })
+                    }
+                    .padding()
                 }
                 .padding()
                 
